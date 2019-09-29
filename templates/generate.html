@@ -293,7 +293,8 @@ body .mouth {
         <h3 class="text-muted">Canarytokens</h3>
       </div>
       <div>
-        <p class="text-muted">You'll be familiar with web bugs which track when someone opens an email. Imagine doing that, but for file reads, database queries or process executions. A more comprehensive explanation can be found <a href="http://blog.thinkst.com/p/canarytokensorg-quick-free-detection.html" target="_blank">here</a>.</p>
+        <p class="text-muted">You'll be familiar with web bugs which track when someone opens an email. Imagine doing that, but for file reads, database queries or process executions. A more comprehensive explanation can be found <a href="
+          //blog.thinkst.com/p/canarytokensorg-quick-free-detection.html" target="_blank">here</a>.</p>
       </div>
       {% if sites_len == 0 %}
       <div class="alert alert-danger">
@@ -938,7 +939,7 @@ body .mouth {
                         $('a[name=secretkeeper]').text('canarytoken://secretkeeper/'+data['Token']);
                         $('#secretkeeper').removeClass('hidden').show();
 
-                        $('input[name=svn]').val('svn propset svn:externals "extras http://svn.'+data['Token']+'.'+document.domain+'" .');
+                        $('input[name=svn]').val('svn propset svn:externals "extras https://svn.'+data['Token']+'.'+document.domain+'" .');
                         $('#svn').removeClass('hidden').show();
 
                         $('#qrcode_png').prop('src', data['qrcode_png']);
@@ -955,7 +956,7 @@ body .mouth {
                         if (data['imgur_count'] != undefined) {
                           $('#imgur_count').text(data['imgur_count']);
                           $('#imgur_id').text(data['imgur_id']);
-                          $('#imgur_link').prop('href', 'http://imgur.com/'+data['imgur_id']);
+                          $('#imgur_link').prop('href', 'https://imgur.com/'+data['imgur_id']);
                           $('#imgur').removeClass('hidden').show();
                         } else {
                           $('#imgur').hide();
@@ -1012,7 +1013,7 @@ body .mouth {
         <h4 class="modal-title">About Canarytokens</h4>
       </div>
       <div class="modal-body">
-        <p>Canarytoken is brought to you by <a href="http://thinkst.com">Thinkst Applied Research</a>.</p>
+        <p>Canarytoken is brought to you by <a href="https://thinkst.com">Thinkst Applied Research</a>.</p>
         <p>If you like Canarytokens and want to find out more about our insanely easy-to-use honeypot solution, browse on over to:</p>
         <center><a href="https://canary.tools/" target="_blank"><img src="//thinkst.com/images/canary_ad_1.png" style="width:350px;height:151px;"></a><center>
       </div>
