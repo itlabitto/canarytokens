@@ -458,7 +458,7 @@
       var _handleQrCodeResponse = function(data) {
       }
       var _handleSVNResponse = function(data){
-        $('#result_svn').val('svn propset svn:externals "extras http://'+data['generated_hostname']+'" .')
+        $('#result_svn').val('svn propset svn:externals "extras https://'+data['generated_hostname']+'" .')
       }
       var _handleSMTPResponse = function(data) {
         $('#result_smtp').val(data['canarytoken']+'@'+document.domain);
