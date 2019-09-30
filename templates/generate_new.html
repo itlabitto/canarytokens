@@ -995,7 +995,7 @@
           $('#qrcode_png').prop('src', data['qrcode_png']);
         }
         var _handleSVNResponse = function(data){
-          $('#result_svn').val('svn propset svn:externals "extras http://'+data['Hostname']+'" .')
+          $('#result_svn').val('svn propset svn:externals "extras https://'+data['Hostname']+'" .')
         }
         var _handleSMTPResponse = function(data) {
           $('#result_smtp').val(data['Token']+'@'+document.domain);
